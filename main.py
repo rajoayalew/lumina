@@ -1,9 +1,10 @@
 import gi 
-from gi.repository import Gtk
 import subprocess
 import functions
 
 gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk
+
 monitors = functions.listMonitors()
 
 class MyWindow(Gtk.Window):
